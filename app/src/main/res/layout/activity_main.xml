@@ -29,6 +29,7 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:gravity="center_vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -39,18 +40,16 @@
                 android:src="@drawable/id_icon"/>
 
             <EditText
+                android:layout_marginStart="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="이메일"
                 android:textColor="#FFFFFF"
+                android:background="@null"
                 android:textColorHint="#DFDFDF"/>
 
         </LinearLayout>
 
-
     </LinearLayout>
-
-
-
 
 </LinearLayout>
