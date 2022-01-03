@@ -5,57 +5,97 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login_background"
-    android:padding="25dp"
     android:orientation="vertical"
+    android:padding="25dp"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
         android:gravity="center"
-        android:layout_marginTop="70dp"
         android:orientation="vertical">
 
         <ImageView
             android:layout_width="140dp"
             android:layout_height="40dp"
-            android:src="@drawable/nepp_logo"/>
+            android:src="@drawable/nepp_logo" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
         android:orientation="vertical">
 
         <LinearLayout
-            android:gravity="center_vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/id_icon"/>
+                android:src="@drawable/id_icon" />
 
             <EditText
-                android:layout_marginStart="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="이메일"
-                android:textColor="#FFFFFF"
+                android:layout_marginStart="20dp"
                 android:background="@null"
-                android:textColorHint="#DFDFDF"/>
+                android:hint="이메일"
+                android:inputType="textEmailAddress"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#DFDFDF" />
 
         </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#DFDFDF"
-            android:layout_marginTop="5dp"/>
+            android:layout_marginTop="5dp"
+            android:background="#DFDFDF" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/password_icon" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@null"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#DFDFDF" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#DFDFDF" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
